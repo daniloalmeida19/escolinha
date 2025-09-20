@@ -1,12 +1,13 @@
 0,0 +1,63 @@
-/* Define as cores principais para fácil reutilização */
 :root {
-    --cor-azul-claro: #ADD8E6; /* LightBlue */
-    --cor-rosa: #FFB6C1; /* LightPink */
-    --cor-texto-principal: #333;
-    --cor-texto-titulos: #005A9C; /* Um azul um pouco mais escuro para leitura */
-    --cor-links-hover: #FF69B4; /* HotPink para destaque */
-    --cor-fundo: #fdfdff;
+    /* Novas cores infantis e vibrantes */
+    --cor-ceu: #87CEFA;         /* LightSkyBlue */
+    --cor-grama: #90EE90;       /* LightGreen */
+    --cor-sol: #FFD700;         /* Gold */
+    --cor-texto-principal: #4A4A4A; /* Um cinza escuro, mais suave que preto */
+    --cor-titulos: #FF6347;     /* Tomato */
+    --cor-links-hover: #FF4500; /* OrangeRed */
+    --cor-fundo-modal: #FFFFE0; /* LightYellow */
 }
 
 /* Estilos gerais para o corpo da página */
@@ -14,8 +15,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Gradiente de azul claro para rosa claro */
-    background: linear-gradient(to bottom, var(--cor-azul-claro), var(--cor-rosa));
+    /* Gradiente de céu para grama */
+    background: linear-gradient(to bottom, var(--cor-ceu), var(--cor-grama));
     background-attachment: fixed; /* Mantém o gradiente fixo durante a rolagem */
     color: var(--cor-texto-principal);
     display: flex;
@@ -25,15 +26,15 @@ body {
 
 /* Estilo para o cabeçalho principal */
 h1 {
-    color: var(--cor-texto-titulos);
+    color: var(--cor-titulos);
     text-align: center;
     margin-top: 20px;
-    text-shadow: 2px 2px 4px var(--cor-rosa); /* Sombra rosa suave para destaque */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para destaque */
 }
 
 /* Estilo para os subtítulos das seções */
 h2 {
-    color: var(--cor-texto-titulos); /* Usando o azul escuro para melhor contraste */
+    color: var(--cor-titulos); /* Usando a cor de destaque para títulos */
     font-size: 1.8em;
 }
 
@@ -58,7 +59,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--cor-texto-titulos); /* Cor azul para harmonizar com os títulos */
+    color: var(--cor-titulos); /* Cor de destaque para harmonizar com os títulos */
     font-weight: bold;
 }
 
@@ -89,7 +90,7 @@ footer {
 }
 
 .contatos-rodape a {
-    color: var(--cor-texto-titulos);
+    color: var(--cor-titulos);
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
@@ -139,19 +140,19 @@ ul {
 
 .modal-conteudo {
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Fonte mais divertida */
-    background: var(--cor-fundo);
+    background: var(--cor-fundo-modal);
     padding: 25px 35px;
     border-radius: 15px; /* Cantos bem arredondados */
     text-align: center;
     position: relative;
     width: 90%;
     max-width: 400px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    border: 3px dashed var(--cor-rosa); /* Borda pontilhada rosa */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 4px dashed var(--cor-sol); /* Borda pontilhada amarela */
 }
 
 .modal-conteudo h2 {
-    color: var(--cor-texto-titulos); /* Cor azul para o título */
+    color: var(--cor-titulos); /* Cor de destaque para o título */
     margin-top: 0;
 }
 
