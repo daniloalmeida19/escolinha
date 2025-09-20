@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Escolinha Infantil</title>
 </head>
 <body>
+
+    <h1>Escolinha Infantil</h1>
     
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Bem-vindo à nossa Escolinha Infantil!</h2>
+        <p>Oferecemos um ambiente seguro e acolhedor para o desenvolvimento das crianças.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Escolinha Infantil. Todos os direitos reservados.</p>
+        <div class="contatos-rodape">
+            <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com/suaescolinha" target="_blank">Instagram</a>
+            <a href="tel:+551133334444">Telefone</a>
+        </div>
+    </footer>
+
+    <!-- Modal de Boas-Vindas -->
+    <div id="modal-boas-vindas" class="modal-overlay">
+        <div class="modal-conteudo">
+            <span class="modal-fechar">&times;</span>
+            <h2>Bem-vindo(a)!</h2>
+            <p>Obrigado por visitar nossa página! 🎨🖍️🧸</p>
+        </div>
+    </div>
+
+    <script>
+        // Código para controlar o modal de boas-vindas
+        window.onload = function() {
+            const modal = document.getElementById("modal-boas-vindas");
+            const fecharBtn = document.querySelector(".modal-fechar");
+
+            // Mostra o modal
+            modal.style.display = "flex";
+
+            // Função para fechar o modal
+            const fecharModal = function() {
+                modal.style.display = "none";
+            };
+
+            // Fecha ao clicar no 'X' ou fora do conteúdo
+            fecharBtn.onclick = fecharModal;
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    fecharModal();
+                }
+            };
+        };
+    </script>
 </body>
 </html>
