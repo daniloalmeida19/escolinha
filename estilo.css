@@ -169,3 +169,24 @@ ul {
 .modal-fechar:hover {
     color: var(--cor-texto-principal);
 }
+
+/* --- Estilos para a Galeria de Fotos --- */
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as fotos */
+    padding: 20px;
+}
+
+.galeria-fotos img {
+    width: 100%;
+    max-width: 300px; /* Largura máxima para cada foto */
+    border: 5px solid var(--cor-fundo-modal); /* Borda amarela clara */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
