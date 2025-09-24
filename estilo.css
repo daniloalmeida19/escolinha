@@ -21,7 +21,32 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+
+.introducao img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+}
+
+
 
 /* Estilo para o cabeçalho principal */
 h1 {
